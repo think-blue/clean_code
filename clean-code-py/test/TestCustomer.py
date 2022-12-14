@@ -24,8 +24,8 @@ class TestCustomer(unittest.TestCase):
         customer.add_rental(Rental(Movie("Avatar II", 1), 9))
         # print(customer.html_statement())
         self.assertEqual(customer.html_statement(),
-                         "<h1>Rental Record for Chinmay Dhawan</h1><br>	Avatar	14.0<br>	Home Alone	9.0<br>	Avatar "
-                         "II	27<br>Amount owed is 50.0<br>You earned 4 frequent renter points")
+                         "<h1>Rental Record for Chinmay Dhawan</h1><br><p>	Avatar	14.0<br>	Home Alone	9.0<br>	Avatar "
+                         "II	27<br>Amount owed is 50.0<br>You earned 4 frequent renter points</p>")
 
 
 if __name__ == '__main__':
